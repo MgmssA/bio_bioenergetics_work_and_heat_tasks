@@ -1,0 +1,250 @@
+## Stufe II
+
+```{r}
+#| label: simple-push
+#| output: false
+
+task <- tibble::tibble(
+    task = "Einfaches Heben",
+    level = 2,
+    base_points = 7,
+    max_base_points = 9 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Du trägst eine Kiste Sprudel mit einer Masse von $m = 18.4\,\kilogram$ vom Erdgeschoss in das erste Stockwerk, dass sich auf einer Höhe $h = 3.2\,\meter$ befindet. Welche Arbeit verrichtest Du dabei? Von wo nach wo fließt die Energie? Rechne mit $g = 9.8\,\newtonpermeter$.  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die zuständige Gleichung ist die Definition der mechanischen Arbeit:
+$$
+W = -F \Delta s.\;\star
+$$
+Die wirkende Kraft ist die Gewichtskraft
+$$
+F = m g = 18.4\,\kilogram \cdot 9.8\,\newtonpermeter \approx 180\,\newton.\;\star\star
+$$
+Die Wirkstrecke der Kraft ist
+$$
+\Delta s = s\sub{Ende} - s\sub{Anfang} = h - 0 = 3.2\,\meter - 0\,\meter = 3.2\,\meter.\;\star\star
+$$
+Un daraus ergibt sich die Arbeit
+$$
+W = -180\,\newton \cdot 3.2\,\meter = -577\,\joule.\;\star\star 
+$$
+Du verrichtest eine Arbeit von $-577\,\joule$\*. Die Energie fließt von Dir in die Lageenergie des Systems Kiste\*.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: balloon-expansion
+#| output: false
+
+task <- tibble::tibble(
+    task = "Luftballon aufblasen",
+    level = 2,
+    base_points = 7,
+    max_base_points = 9 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Du bläst einen Luftballon auf, der sich von $V\sub{Anfang} = 0.000001\,\cubicmeter$ auf $V\sub{Ende} = 0.007\,\cubicmeter$ aufbläht. Welche Arbeit hast Du als System geleistet? Von wo nach wo fließt die Energie? Rechne mit einem Atmosphärendruck von $101325\,\unit{Pa}$.  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die zuständige Gleichung ist die Definition der Expansionsarbeit:
+$$
+W = -p \Delta V.\;\star
+$$
+Die Volumenveränderung ist
+$$
+\Delta V = V\sub{Ende} - V\sub{Anfang} = 0.007\,\cubicmeter - 0.000001\,\cubicmeter \approx 0.007\,\cubicmeter.\;\star\star
+$$
+Die Expansionsarbeit ist
+$$
+W = -101325\,\pascal \cdot 0.007\,\cubicmeter = -709.3\,\joule.\;\star\star 
+$$
+Du verrichtest eine Arbeit von $-709.3\,\joule$\*. Die Energie fließt von Dir zum Luftballon\*.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: squirrel-climb
+#| output: false
+
+task <- tibble::tibble(
+    task = "Eichhörnchen klettert",
+    level = 2,
+    base_points = 7,
+    max_base_points = 9 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Ein Eichhörnchen mit der Masse $m = 0.5\,\kilogram$ klettert auf einer Fichte von der Erde bis auf eine Höhe von $h = 28\,\meter$ befindet. Welche Arbeit errichtet das Tier dabei? Von wo nach wo fließt die Energie? Rechne mit $g = 9.8\,\newtonpermeter$.  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die zuständige Gleichung ist die Definition der mechanischen Arbeit:
+$$
+W = -F \Delta s.\;\star
+$$
+Die wirkende Kraft ist die Gewichtskraft
+$$
+F = m g = 0.5\,\kilogram \cdot 9.8\,\newtonpermeter = 4.9\,\newton.\;\star\star
+$$
+Die Wirkstrecke der Kraft ist
+$$
+\Delta s = s\sub{Ende} - s\sub{Anfang} = h - 0 = 28\,\meter - 0\,\meter = 28\,\meter.\;\star\star
+$$
+Un daraus ergibt sich die Arbeit
+$$
+W = -4.9\,\newton \cdot 28\,\meter = -137.2\,\joule.\;\star\star 
+$$
+Das Eichhörnchen verrichtet eine Arbeit von $-137.2\,\joule$\*. Die Energie fließt aus dem Eichhörnchen in seine eigene Lageenergie\*.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: inhalation
+#| output: false
+
+task <- tibble::tibble(
+    task = "Einatmen",
+    level = 2,
+    base_points = 7,
+    max_base_points = 9 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Beim Einatmen dehnen sich bei Frauen die Lungen im Ruhezustand von einem entspannten Anfangsvolumen um etwa $\Delta V = 0.4\,\liter$ beim Einatmen aus. Beii Männer dehnen sie sich um etwa $\Delta V = 0.5\,\liter$ aus. Welche Arbeit wird bei jedem Atemzug verrichtet? Von wo nach wo fließt die Energie? Rechne mit einem Atmosphärendruck von $101325\,\unit{Pa}$.  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die zuständige Gleichung ist die Definition der Expansionsarbeit:
+$$
+W = -p \Delta V.\;\star
+$$
+Die Expansionsarbeit bei der Frau ist
+$$
+W = -101325\,\pascal \cdot 0.0004\,\cubicmeter = -40.5\,\joule,\;\star\star 
+$$
+und beim Mann
+$$
+W = -101325\,\pascal \cdot 0.0005\,\cubicmeter = -50.7,\joule.\;\star\star 
+$$
+Frauen verrichten $-40.5\,\joule$ und Männer $-50.7\,\joule$ durchschnittliche physikalische Arbeit bei jedem Atemzug.\*. Die Energie fließt dabei von Dir als System in die Lageenergie der Lungen, denn sie sind elastisch. Ein weiterer Teil fließt asl Wärmeenergie in die Umgebung ab\*.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: heating-water
+#| output: false
+
+task <- tibble::tibble(
+    task = "Wasser erwärmen",
+    level = 2,
+    base_points = 7,
+    max_base_points = 9 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Du erwärmst $m = 1\,\kilogram$ Wasser von $T = 25\,\celsius$ auf $T = 26\,\celsius$. Wieviel Energie benötigst Du dafür? Rechne mit der spezifischen Wärmekapazität des Wassers von $C_{p,m} = 4200\,\jouleperkilogramperkelvin$  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die zuständige Gleichung ist die Definition der Wärmeenergie bezogen auf Stoffmasse:
+$$
+Q = m C_{p,m} \Delta T.\;\star
+$$
+Die Temperaturveränderung ist 
+$$
+\Delta T = T\sub{Ende} - T\sub{Anfang} = 299\,\kelvin - 298\,\kelvin = 1\,\kelvin.\;\star\star 
+$$
+Dadurch ist die Wärmeenergie
+$$
+Q = 1\,\kilogram \cdot 4200\,\jouleperkilogramperkelvin \cdot 1\,\kelvin = 4200,\joule.\;\star\star 
+$$
+zum Erwärmen notwendig. Zum Erwärmen von $1\,\kilogram$ Wasser werden $4200\,\joule$ benötigt\*. Die Energie fließt aus der Umgebung in das Wasser ein\*.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: cooling-water
+#| output: false
+
+task <- tibble::tibble(
+    task = "Wasser abkühlen",
+    level = 2,
+    base_points = 12,
+    max_base_points = 13 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Du kühlst $m = 18\,\kilogram$ Wasser von $T = 25\,\celsius$ auf $T = 8\,\celsius$ herunter. Wieviel Energie benötigst Du dafür? Rechne mit der spezifischen Wärmekapazität des Wassers von $C_{p,m} = 4200\,\jouleperkilogramperkelvin$.  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die zuständige Gleichung ist die Definition der Wärmeenergie bezogen auf Stoffmasse:
+$$
+Q = m C_{p,m} \Delta T.\;\star
+$$
+Die Temperaturveränderung ist 
+$$
+\Delta T = T\sub{Ende} - T\sub{Anfang} = 281\,\kelvin - 298\,\kelvin = -17\,\kelvin.\;\star\star 
+$$
+Dadurch ist die Wärmeenergie
+$$
+Q = 0.018\,\kilogram \cdot 4200\,\jouleperkilogramperkelvin \cdot -17\,\kelvin = -1285,\joule.\;\star\star 
+$$
+zum Kühlen notwendig. Zum Kühlen von $18\,\gram$ Wasser werden $-1285\,\joule$ verwendet\*. Diese Energie wird aus dem Wasser in die Umgebung zugeführt\*.]{fg="green-shade-3"}
+:::
+

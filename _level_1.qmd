@@ -1,0 +1,333 @@
+## Stufe I
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Die Thermodynamik",
+    level = 1,
+    base_points = 4,
+    max_base_points = 4 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Womit beschäftigt sich der Teilbereich der Naturwissenschaften mit dem Namen **Thermodynamik**? Gib eine einfache Beschreibung an.  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die Thermodynamik ist ein Teilbereich der Naturwissenschaften, der sich mit Wärme\*, Arbeit\*, Temperatur\* und ihren Beziehungen zur Energie\* beschäftigt.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Zustandsänderungen",
+    level = 1,
+    base_points = 8,
+    max_base_points = 8 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Welche Zustände und Zustandsänderungen behandelt die Thermodynamik? Gib jeweils zwei Beispiele für Zustandsänderungen von Materie und Energie an. 
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[In der Thermodynamik vergleichen wir Anfangs-\* und Endzustände\* von Materie\* und Energie\* miteinander. Beispiele für Zustandsänderungen von Materie können Druck\*, das Volumen\*, oder Temperatur\* sein. Zustandsänderungen von Energie können mechanische Arbeit\* oder Wärme\* sein.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: difference-operator
+#| output: false
+task <- tibble::tibble(
+    task = "Der Differenzoperator",
+    level = 1,
+    base_points = 5,
+    max_base_points = 5 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Die Differenz wird auch als Differenzoperator bezeichnet. Das ist so, weil das voranstellen das Bilden einer Differenz veranlasst. Übe das Bilden einer Differenz mithilfe des Differenzoperators an der Variablen $x$, $p$, $T$, $V$, und $W$. 
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Der Differenzoperator veranlasst die Bildung einer Differenz, wenn er an einer beliebigen Variable $x$ vorangestellt wird\*. Dann wird daraus
+$$
+\Delta x = x\sub{Ende} - x\sub{Anfang}.\;\star
+$$
+Für die anderen Variablen heisst es dann
+$$
+\begin{gather*}
+\Delta p = p\sub{Ende} - p\sub{Anfang},\;\star \\
+\Delta T = T\sub{Ende} - T\sub{Anfang},\;\star \\
+\Delta V = V\sub{Ende} - V\sub{Ende},\;\star \\
+\Delta W = W\sub{Ende} - W\sub{Anfang}.\;\star
+\end{gather*}
+$$
+Das $x$ hat also keine besondere Bedeutung sondern dient als Platzhalter für jede beliebige Variable, die einen physikalischen Sinn ergibt.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: difference-positive
+#| output: false
+task <- tibble::tibble(
+    task = "Differenzbildung ins Positive",
+    level = 1,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Welche Differenzen erhältst Du, wenn Du Dich auf dem Zahlenstrahl vom Negativen zum Positiven bewegst mit folgenden Anfangs- und Endpunkten? 
+
+a. $x\sub{Anfang} = 5, \, x\sub{Ende} = 12$
+
+#. $x\sub{Anfang} = -4, \, x\sub{Ende} = 3$
+
+#. $x\sub{Anfang} = -9, \, x\sub{Ende} = -2$
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die Ergebnisse sind
+$$
+\begin{gather*}
+\Delta x = x\sub{Ende} - x\sub{Anfang} = 12 - 5 = 7,\;\star\star \\
+\Delta x = x\sub{Ende} - x\sub{Anfang} = 3 - (-4) = 7 ,\;\star\star \\
+\Delta x = x\sub{Ende} - x\sub{Anfang} = -2 - (-9) = 7,\;\star\star
+\end{gather*}
+$$
+Alle Differenzen sind positiv.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: difference-negative
+#| output: false
+task <- tibble::tibble(
+    task = "Differenzbildung ins Negative",
+    level = 1,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Welche Differenzen erhältst Du, wenn Du Dich auf dem Zahlenstrahl vom Negativen zum Positiven bewegst mit folgenden Anfangs- und Endpunkten? 
+
+a. $x\sub{Anfang} = -6, \, x\sub{Ende} = -12$
+
+#. $x\sub{Anfang} = 2, \, x\sub{Ende} = -4$
+
+#. $x\sub{Anfang} = 15, \, x\sub{Ende} = 9$
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die Ergebnisse sind
+$$
+\begin{gather*}
+\Delta x = x\sub{Ende} - x\sub{Anfang} = -12 - (-6) = -6,\;\star\star \\
+\Delta x = x\sub{Ende} - x\sub{Anfang} = -4 - 2 = -6 ,\;\star\star \\
+\Delta x = x\sub{Ende} - x\sub{Anfang} = 9 - 15 = -6,\;\star\star
+\end{gather*}
+$$
+Alle Differenzen sind negativ.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: difference-properties
+#| output: false
+task <- tibble::tibble(
+    task = "Eigenschaften von Differenzen",
+    level = 1,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Was sind die wichtigsten Eigenschaften von Differenzen? 
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die wichtigsten Eigenschaften von Differenzen sind: 1. Das Delta zeigt den Betrag oder die Länge zwischen Anfang und Ende an. 2. Das Vorzeichen des Deltas zeigt immer die Richtung an, in der sich etwas bewegt oder die Differenz gebildet wird.
+3. Der Betrag des Deltas ist unabhängig vom Ort des Anfangs und des Endes und zeigt immer die richtige Richtung und den richtigen Betrag an.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: work-definition
+#| output: false
+task <- tibble::tibble(
+    task = "Definition der Arbeit",
+    level = 1,
+    base_points = 8,
+    max_base_points = 8 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Gib die Definition der mechanischen Arbeit an. Gib die Gleichung an, beschreibe in einem Satz, was sie bedeutet, nenne alle Variablen und gib ihre physikalische Einheit an. Warum hat die Arbeit in der Thermodynamik einen negative Vorzeichen?  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die mechanische Arbeit ist definiert als
+$$
+W = -F \Delta s\;\star
+$$
+mit $W$ als Arbeit\* mit der Einheit $[\joule]$\*, $F$ als Kraft\* mit der Einheit $[\newton]$\*, und $\Delta s$ die Strecke über die die Kraft wirkt\* mit der Einheit $[\meter]$\*. Wenn man sich in positiver Richtung unter Anwendung einer Kraft, dann ist die Strecke positive und die Kraft ebenfalls. Dadurch kehrt das Vorzeichen die Arbeit vom Positiven zum Negativen. Die Arbeit wird deswegen als negativ ausgegebn, weil die Thermodynamik auf das System schaut. Wenn diese Kraft über diese Strecke angewendet wird, dann geht sie dem System verloren\*.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: expansion-work-definition
+#| output: false
+task <- tibble::tibble(
+    task = "Definition der Expansionsarbeit",
+    level = 1,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Gib die Definition der Expansionsarbeit an. Gib die Gleichung an, beschreibe in einem Satz, was sie bedeutet, nenne alle Variablen und gib ihre physikalische Einheit an. Warum hat die Expansionsarbeit in der Thermodynamik einen negative Vorzeichen?  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die Expansionsarbeit ist definiert als
+$$
+W = -p \Delta V\;\star
+$$
+mit $W$ als Arbeit\* mit der Einheit $[\joule]$\*, $p$ als Druck\* mit der Einheit $[\pascal]$\*, und $\Delta V$ die Volumenänderung gegen den Druck $p$\* mit der Einheit $[\cubicmeter]$. Wenn sich zum Beispiel Gas gegen einen äußeren Druck ausdehnt, dann ändert sich das Volumen in positiver Richtung. Dadurch kehrt das Vorzeichen die Arbeit vom Positiven zum Negativen. Die Arbeit wird deswegen als negativ ausgegebn, weil die Thermodynamik auf das System schaut. Wenn dies geschieht, dann geht sie dem System verloren.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: heat-definition
+#| output: false
+task <- tibble::tibble(
+    task = "Definition der Wärmeenergie",
+    level = 1,
+    base_points = 8,
+    max_base_points = 8 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Gib die Definition für die Wärmeenergie an. Gib die Gleichung für die gesamte Wärmeenergie an, beschreibe in einem Satz, was sie bedeutet, nenne alle Variablen mit entsprechenden physikalische Einheit. Warum gibt es hier kein Mimnuszeichen wie bei der mechanischen Kraft?
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[a: Die Veränderung der Wärmeenergie ist definiert als
+$$
+Q = C_p \Delta T.\;\star
+$$
+Dabei ist $Q$ die Wärmeenergie\* mit der Einheit $[\joule]$\*, $C_p$ die Wärmekapazität bei konstantem Volumen\* mit der Einheit $[\jouleperkelvin]$\*, und $\Delta T$ die Temperaturveränderung\* mit der Einheit $[\kelvin]$\*. Es gibt hier kein Minuszeichen, weil eine Temperaturzunahme immer positiv ausfällt. Dadurch ist auch die Wärmeenergie positiv, weil sie in das System, dass erwärmt wird hineingeht\*. Das System gewinnt sie.]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: heat-capacity
+#| output: false
+task <- tibble::tibble(
+    task = "Wärmekapazität",
+    level = 1,
+    base_points = 8,
+    max_base_points = 8 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Wie lässt sich die gesamte Wärmekapazität eines Systems für einen homogenen Stoff auf Massen und auf Stoffmenge beziehen?
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die auf Masse bezogene Wärmekapazität ist als
+$$
+C = m C_{p,m}\;\star
+$$
+definiert. Dabei ist $m$ die Masse\* des Stoffes in $[\kilogram]$\* und $C_{p,m}$ die auf Masse bezogene Wärmekapazität\* in $[\jouleperkilogramperkelvin]$\*. Für die auf Stoffmenge bezogeneWärmekapazität gilt:
+$$
+C = n C_{p,n}.\;\star
+$$
+Dabei ist $n$ die Stoffmenge\* des Stoffes in $[\mole]$\* und $C_{p,n}$ die auf Stoffmenge bezogene Wärmekapazität in $[\joulepermoleperkelvin]$.]{fg="green-shade-3"}
+:::

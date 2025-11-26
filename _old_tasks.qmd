@@ -1,0 +1,47 @@
+## Aufgaben
+
+### Stufe I
+
+#. Welche Beziehung gilt zwischen initialem $x\sub{i}$ und finalem $x\sub{f}$ Punkt einer Differenz, wenn Du Dich auf dem Zahlenstrahl vom Negativen zum Positiven bewegst; also von links nach rechts?
+
+#. Welche Differenzen bekommst Du, wenn Du Dich auf dem Zahlenstrahl vom Negativen zum Positiven bewegst mit folgenden initialen und finalen Punkten? 
+
+    a. $x\sub{i} = 2, \, x\sub{f} = 7$
+    
+    #. $x\sub{i} = -2, \, x\sub{f} = 7$
+
+    #. $x\sub{i} = -7, \, x\sub{f} = -2$
+
+#. Welche Beziehung gilt zwischen initialem $x\sub{i}$ und finalem $x\sub{f}$ Punkt einer Differenz, wenn Du Dich auf dem Zahlenstrahl vom Positiven zum Negativen bewegst; also von rechst nach links?
+
+#. Welche Differenzen bekommst Du, wenn Du Dich auf dem Zahlenstrahl vom Positiven zum Negativen bewegst mit folgenden initialen und finalen Punkten?
+
+    a. $x\sub{i} = 7, \, x\sub{f} = 2$
+
+    #. $x\sub{i} = 7, \, x\sub{f} = -2$
+
+    #. $x\sub{i} = -2, \, x\sub{f} = -7$
+
+#. Du ziehst einen mit Blüten beladenen Holzschlitten im Hochsommer über eine Schotterfläche. Dabei ist Deine Zugkraft $80\,\unit{N}$ und Du mußt über eine Strecke $d = 10\,\unit{m}$ ziehen.
+
+    a. Welche Arbeit hast Du bei $s\sub{i}$ geleistet?
+
+    #. Welche Arbeit hast Du bei $s\sub{f}$ geleistet?
+
+#. Du bläst einen Luftballon auf, der sich von $V\sub{i} = 0.001\,\unit{m}^3$ auf $V\sub{f} = 0.05\,\unit{m}^3$ aufbläht. Wieviel Arbeit hast Du geleistet? Rechne mit einem Atmosphärendruck von $101325\,\unit{Pa}$.
+
+#. Welche Energie gewinnt das Wasser, wenn Du $m = 1\,\unit{kg}$ Wasser um einen Grad Kelvin erwärmst bei $T\sub{i} = 293\,\unit{K}$ oder $20\,\unit{°C}$? Rechne mit einer spezifischen Wärmekapazität des Wassers von $4184\,\unit{J}\,\unit{kg}^{-1}\,\unit{K}^{-1}$ bei $293\,\unit{K}$. 
+
+### Stufe II
+
+#. Kräfte werden in der Einheit $[\unit{N}]$ angegeben. Wie groß ist die gesuchte Masse, die eine Gewichtskraft von $F\sub{g} = 1 \,\unit{N}$ verursacht? Rechne mit der Erdbeschleunigung $g = 9.81 \,\unit{m}\,\unit{s}^{-2}$. Das hoch -2 bedeutet $\frac{1}{s^2}$.
+
+#. Du pumpst $Q = 1\,\unit{J}$ in eine Menge $m$ Wasser hinein und erwärmst die Masse Wasser um $\Delta T = 1\,\unit{K}$. Wieviel Kilogramm Wasser liegen vor?
+
+#. Gibt es Systeme, die nur Arbeit mit der Umgebung austauschen aber keine Wärme? Wie heißen diese Systeme? Kennst Du Beispiele?
+
+### Stufe III
+
+#. Der durschnnittliche menschliche Körper mit $m = 70\,\unit{kg}$ braucht etwa $105\,\unit{kJ}\,\unit{kg}^{-1}\,\unit{d}^{-1}$ an Energie pro Körpergewicht $[\unit{kg}]$ und Tag $[\unit{d}]$; nur zum überleben. Das nennt sich der Grundumsatz. Dabei gehen etwa $350\,\unit{kJ}\,\unit{d}^{-1}$ insgesamt als Wärme verloren bei einem Körpergewicht von $m = 70\,\unit{kg}$. Wieviel Energie bleibt für alle Lebensprozesse pro Kilogramm und Tag übrig, wenn Du den Wärmeverlust ausgleichst? 
+
+#. Wie kannst Du die mechanische Arbeit $W = -F \Delta s$ in eine Volumenarbeit $W = -p \Delta V$ umwandeln? Hinweis: verwende die Definition des Drucks $P = F/A$ bei dem $A$ die Fläche ist und die Tatsache das ein Volumen aus Grundfläche und Höhe berechnet werden kann.

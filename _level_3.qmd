@@ -1,0 +1,218 @@
+## Stufe III
+
+```{r}
+#| label: work-with-velocity
+#| output: false
+
+task <- tibble::tibble(
+    task = "Arbeit mit Geschwindigkeit",
+    level = 3,
+    base_points = 4,
+    max_base_points = 4 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Zeige theoretisch, dass
+$$
+W = -F \Delta s
+$$
+dasselbe ist wie
+$$
+W = -F v \Delta t,
+$$
+wobei $v$ die Geschwindigkeit ist und $\Delta t$ eine Zeitspanne.
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: initial-temperature
+#| output: false
+
+task <- tibble::tibble(
+    task = "Anfangstemperatur",
+    level = 3,
+    base_points = 6,
+    max_base_points = 7 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Eine Menge $m = 25\,\gram$ Wasser wird herunter gekühlt auf $T = 4\,\celsius$. Dabei wurde eine Wärmeenergie von $Q = 3600\,\joule$ aus dem System abgeführt. Welche Anfangstemperatur hatte das Wasser? Rechne mit der spezifischen Wärmekapazität des Wassers von $C_{p,m} = 4200\,\jouleperkilogramperkelvin$.  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die zugrundeliegende Gleichung ist
+$$
+Q = m C_{p,m} \Delta T = m C_{p,m} \left( T\sub{Ende} - \underbrace{T\sub{Anfang}}_{?\star} \right).\;\star
+$$
+Durch Umstellung ergibt sich die gesuchte Anfangstemperatur
+$$
+T\sub{Anfang} = T\sub{Ende} - \frac{Q}{m C_{p,m}}.\;\star
+$$
+Einsetzen ergibt
+$$
+T\sub{Anfang} = 277\,\kelvin - \frac{-3600\,\joule}{0.025\,\kilogram \cdot 4200\,\jouleperkilogramperkelvin} = 311.3\,\kelvin.\;\star\star
+$$
+Die Anfangstemperatur vor dem Kühlen war $311.3\,\kelvin$\* oder $38.3\,\celsius$\*.
+]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: heat-ratios
+#| output: false
+
+task <- tibble::tibble(
+    task = "Wärmeenergie Verhältnisse",
+    level = 3,
+    base_points = 4,
+    max_base_points = 4 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Zeige theoretisch, dass das Verhältnis der Wärmeenergiemengen zweier Massen $m_1$ und $m_2$ so aussieht:
+
+a. Wenn es dasselbe Material ist aber unterschiedliche Massen und Temperaturveränderungen
+
+    $$
+    \frac{Q_1}{Q_2} = \frac{m_1 \Delta T_1}{m_2 \Delta T_2}
+    $$
+
+b. Wenn es unterschiedliche Materialien sind aber dieselbe Masse
+
+    $$
+    \frac{Q_1}{Q_2} = \frac{C_{p,m_1} \Delta T_1}{C_{p,m_2} \Delta T_2}
+    $$
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die zugrundeliegende Gleichung ist
+$$
+Q = m C_{p,m} \Delta T = m C_{p,m} \left( T\sub{Ende} - \underbrace{T\sub{Anfang}}_{?\star} \right).\;\star
+$$
+Durch Umstellung ergibt sich die gesuchte Anfangstemperatur
+$$
+T\sub{Anfang} = T\sub{Ende} - \frac{Q}{m C_{p,m}}.\;\star
+$$
+Einsetzen ergibt
+$$
+T\sub{Anfang} = 277\,\kelvin - \frac{-3600\,\joule}{0.025\,\kilogram \cdot 4200\,\jouleperkilogramperkelvin} = 311.3\,\kelvin.\;\star\star
+$$
+Die Anfangstemperatur vor dem Kühlen war $311.3\,\kelvin$\* oder $38.3\,\celsius$\*.
+]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: heat-transfer
+#| output: false
+
+task <- tibble::tibble(
+    task = "Wärmeenergie Übertragung",
+    level = 3,
+    base_points = 10,
+    max_base_points = 10 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Zwei Massen eines Materials, $m_1 = 20\,\kilogram$ und $m_2 = 40\,\kilogram$ befinden sich jeweils auf $T_1 = 30\,\celsius$ und $T_2 = 15\,\celsius$. Diese Massen werden in Kontakt zueinander gebracht und nach einiger Zeit befinden sich beide auf der Temperatur $T\sub{Ende}$. Welche Endtemperatur wird erreicht? Von wo nach wo fließt die Energie? Tip: es fließt der Betrag einer Energie von einem Block zum anderen.  
+
+[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[]{fg="green-shade-3"}
+:::
+
+```{r}
+#| label: condor-flight
+#| output: false
+
+task <- tibble::tibble(
+    task = "Der Flug des Kondors",
+    level = 3,
+    base_points = 12,
+    max_base_points = 12 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Ein Kondor mit einem Gewicht $m = 15\,\kilogram$ startet seinen Flug in einer unbekannten Höhe $h_0$. Er fliegt anschliessend auf die Höhe $h_1 = 4600\,\meter$ und ruht dort aus. Danach setzt er seinen Flug fort, um sein Nest auf einer Höhe von $h_2 = 5000\,\meter$ zu erreichen. Bei welcher Höhe ist der Kondor gestartet, wenn sein gesamter Energieverbrauch bei Ankunft $W_{h_0 \rightarrow h_2} = -117.6\,\kilojoule$ war? Rechne mit $g = 9.8\,\newtonpermeter$.  
+
+[Du kannst `{r} task$base_points` Punkte von `{r} task$max_base_points` möglichen Aufgabenpunkten bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Gesucht wird die Höhe $h_0$. Diese ist Teil der Gleichung:
+$$
+W_{h_0 \rightarrow h_1} = -F \Delta s = -F\sub{g} \left(h_1 - \underbrace{h_0}_{?\star} \right).\;\star
+$$
+Durch Umstellung der Gleichung gewinnt man die gesuchte Höhe
+$$
+h_0 = h_1 + \frac{W_{h_0 \rightarrow h_1}}{F\sub{g}}.\;\star
+$$
+Jetzt gilt es, einen Ausdruck für $W_{h_0 \rightarrow h_1}$ zu finden. Das entnehmen wir der Gesamtarbeit, da diese 
+$$
+W\sub{ges} = W_{h_0 \rightarrow h_1} + W_{h_1 \rightarrow h_2},\;\star
+$$
+ist. Das ist so, weil wir $W_{h_1 \rightarrow h_2}$ berechnen können und wir $W\sub{ges}$ kennen. Die gesuchte Arbeit wäre dann
+$$
+W_{h_0 \rightarrow h_1} = W\sub{ges} - W_{h_1 \rightarrow h_2}\;\star 
+$$
+Jetzt müssen wir zuerst $W_{h_1 \rightarrow h_2}$ berechnen:
+$$
+W_{h_1 \rightarrow h_2} = -F\sub{g} \left(h_2 - h_1 \right) = -12\,\kilogram \cdot 9.8\,\jouleperkilogram \cdot \left(5000\,\meter - 4600\,\meter\right) = -47040\,\joule.\;\star\star
+$$
+Jetzt lässt sich $W_{h_0 \rightarrow h_1}$ berechnen
+$$
+W_{h_0 \rightarrow h_1} = W\sub{ges} - W_{h_1 \rightarrow h_2} = -117600\,\joule - (-47040\,\joule) = -70560\,\joule.\,\star\star
+$$
+Schließlich können wir die Anfangshöhe berechnen:
+$$
+h_0 = h_1 + \frac{W_{h_0 \rightarrow h_1}}{F\sub{g}} = 4600\,\meter + \frac{-70560\,\joule}{12\,\kilogram \cdot 9.8\,\jouleperkilogram} = 4600\,\meter - 600\,\meter = 4000\,\meter.\;\star\star 
+$$
+Der Kondor hat seinen Flug auf einer Höhe von $h_0 = 4000\,\meter$ gestartet\*. Die Energie fließt aus dem Kondor in die Lageenergie des Kondors\*.]{fg="green-shade-3"}
+:::
+
+
+

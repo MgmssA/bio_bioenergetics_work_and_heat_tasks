@@ -1,0 +1,23 @@
+---
+title: |
+    <p>![](style/mgmss_symbol_color.png){width=40px}</p>
+    Bioenergetik - Arbeit und Wärme
+subtitle: 'Was sind die Grundlagen der Lebensenergie?<br><small>Aufgaben</small>'
+date: 2025-11-18 
+date-modified: 2025-11-18
+author: Călin Aurel Drăgan
+abstract: 'Das Leben braucht offensichtlich Energie: das bloße Dasein verlangt nach Energie, selbst wenn man nichts tut. Das Wachstum wäre ohne Energiezufuhr nicht möglich. Mit diesem feinen Dokument fangen wir an, die Geheimnisse der Lebensenergie zu entschlüsseln. Die Grundlagen der Lebensenergie beruhen auf das Verständnis von Arbeit und Wärme. Diese musst Du zuerst verstehen, bevor wir mit dem eigentlichen Metabolismusmaschine anfangen.'
+# bibliography: references.bib
+format: 
+    biodoc-html:
+        include-in-header: _includes/_in_header.html
+        # include-after-body: _includes/_after_body.html
+        embed-resources: false
+        self-contained-math: false
+has-fontawesome: false
+has-math: true
+has-rating: true
+show-rating: false
+filters:
+  - highlight-text
+---
