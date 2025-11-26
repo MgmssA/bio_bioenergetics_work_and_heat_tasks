@@ -33,7 +33,15 @@ wobei $v$ die Geschwindigkeit ist und $\Delta t$ eine Zeitspanne.
 [Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[]{fg="green-shade-3"}
+[Finde zuerst einen Ausdruck, um das $\Delta s$ zu ersetzen\*. Da die Geschwindigkeit eine Rolle spielt, bietet sich 
+$$
+v = \frac{\Delta s}{\Delta t}\;\star 
+$$
+an. Daraus gewinnen wir
+$$
+\Delta s = v \Delta t.\;\star
+$$
+Wenn wir das in die Gleichung der mechanischen Arbeit einfügen ergibt sich die gewünschte Relation\*.]{fg="green-shade-3e"}
 :::
 
 ```{r}
@@ -84,8 +92,8 @@ Die Anfangstemperatur vor dem Kühlen war $311.3\,\kelvin$\* oder $38.3\,\celsiu
 task <- tibble::tibble(
     task = "Wärmeenergie Verhältnisse",
     level = 3,
-    base_points = 4,
-    max_base_points = 4 
+    base_points = 5,
+    max_base_points = 5 
 ) |>
     dplyr::mutate(
         level_points = base_points * level,
@@ -105,7 +113,7 @@ a. Wenn es dasselbe Material ist aber unterschiedliche Massen und Temperaturver�
     \frac{Q_1}{Q_2} = \frac{m_1 \Delta T_1}{m_2 \Delta T_2}
     $$
 
-b. Wenn es unterschiedliche Materialien sind aber dieselbe Masse
+b. Wenn es unterschiedliche Materialien und Temperaturveränderungen sind aber dieselbe Masse
 
     $$
     \frac{Q_1}{Q_2} = \frac{C_{p,m_1} \Delta T_1}{C_{p,m_2} \Delta T_2}
@@ -114,19 +122,26 @@ b. Wenn es unterschiedliche Materialien sind aber dieselbe Masse
 [Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[Die zugrundeliegende Gleichung ist
+[Die zugrundeliegende Gleichungen für den ersten Fall sind
 $$
-Q = m C_{p,m} \Delta T = m C_{p,m} \left( T\sub{Ende} - \underbrace{T\sub{Anfang}}_{?\star} \right).\;\star
+Q_1 = m_1 C_{p,m,1} \Delta T_1\;\star
 $$
-Durch Umstellung ergibt sich die gesuchte Anfangstemperatur
+für Material 1 und
 $$
-T\sub{Anfang} = T\sub{Ende} - \frac{Q}{m C_{p,m}}.\;\star
+Q_2 = m_2 C_{p,m,2} \Delta T_2\;\star
 $$
-Einsetzen ergibt
+für Material 2. Das Verhältnis ist
 $$
-T\sub{Anfang} = 277\,\kelvin - \frac{-3600\,\joule}{0.025\,\kilogram \cdot 4200\,\jouleperkilogramperkelvin} = 311.3\,\kelvin.\;\star\star
+\frac{Q_1}{Q_2} = \frac{m_1 C_{p,m,1} \Delta T_1}{m_2 C_{p,m,2} \Delta T_2}\;\star
 $$
-Die Anfangstemperatur vor dem Kühlen war $311.3\,\kelvin$\* oder $38.3\,\celsius$\*.
+Fall a: dasselbe Material aber unterschiedliche Massen und Temperaturveränderungen: Wärmekapazität kürzt sich weg.
+$$
+\frac{Q_1}{Q_2} = \frac{m_1 \Delta T_1}{m_2 \Delta T_2}\;\star
+$$
+Fall b: dieselbe Masse aber unterschiedliche Materialien und Temperaturveränderungen: Masse kürzt sich weg.
+$$
+\frac{Q_1}{Q_2} = \frac{C_{p,m,1} \Delta T_1}{C_{p,m,2} \Delta T_2}\;\star
+$$
 ]{fg="green-shade-3"}
 :::
 
@@ -137,8 +152,8 @@ Die Anfangstemperatur vor dem Kühlen war $311.3\,\kelvin$\* oder $38.3\,\celsiu
 task <- tibble::tibble(
     task = "Wärmeenergie Übertragung",
     level = 3,
-    base_points = 10,
-    max_base_points = 10 
+    base_points = 8,
+    max_base_points = 9 
 ) |>
     dplyr::mutate(
         level_points = base_points * level,
@@ -150,12 +165,45 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Zwei Massen eines Materials, $m_1 = 20\,\kilogram$ und $m_2 = 40\,\kilogram$ befinden sich jeweils auf $T_1 = 30\,\celsius$ und $T_2 = 15\,\celsius$. Diese Massen werden in Kontakt zueinander gebracht und nach einiger Zeit befinden sich beide auf der Temperatur $T\sub{Ende}$. Welche Endtemperatur wird erreicht? Von wo nach wo fließt die Energie? Tip: es fließt der Betrag einer Energie von einem Block zum anderen.  
+Zwei Massen desselben Materials, $m_1 = 20\,\kilogram$ und $m_2 = 40\,\kilogram$ befinden sich jeweils auf $T_1 = 30\,\celsius$ und $T_2 = 15\,\celsius$. Diese Massen werden in Kontakt zueinander gebracht und nach einiger Zeit befinden sich beide auf der Temperatur $T\sub{Ende}$. Welche Endtemperatur wird erreicht? Von wo nach wo fließt die Energie? Zeige die Herleitung Deiner neben der korrekten Berechnung. Tip: es fließt der Betrag einer Energie von einem Block zum anderen.  
 
 [Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[]{fg="green-shade-3"}
+[Es ist klar, dass beide Massen ihre Temperatur verändern werden\*. Wir wissen bloß noch nicht in welcher Richtung. Es ist dagegen sehr unwahrscheinlich, dass sie auf derselben Temperatur bleiben\*. Wenn das Erstere zutrifft, dann fließt ein Wärmeenergiebetrag von einer Masse auf die andere\*. Auch hier wissen wir nicht von wo nach wo aber wir wissen, dass der Energiegehalt von Masse 1 derselbe sein muss wie der von Masse 2: Also schreiben wir
+$$
+Q_1 + Q_2 = 0\;\star
+$$
+oder
+$$
+Q_1 = -Q_2\;\star
+$$
+Das benutzen wir, um die Definitionen einzuarbeiten
+$$
+m_1 C_{p,m,1} \Delta T_1 = - m_2 C_{p,m,2} \Delta T_2.\;\star
+$$
+Da es sich um dieselben Materialien handelt, ergibt sich
+$$
+m_1 \Delta T_1 = -m_2 \Delta T_2.\;\star
+$$
+Jetzt kommen die Endtemperaturen ins Spiel. Sie sind bei beiden Massen dieselben.
+$$
+m_1 \left( T\sub{Ende} - T_1 \right) = -m_2 \left( T\sub{Ende} - T_2 \right).\;\star
+$$
+Letztendlich bekommt man
+$$
+T\sub{Ende} \left( m_1 + m_2 \right) = m_1 T_1 + m_2 T_2,
+$$
+und daraus folgt
+$$
+T\sub{Ende} = \frac{m_1 T_1 + m_2 T_2}{m_1 + m_2}.\;\star
+$$
+Einsetzen ergibt
+$$
+T\sub{Ende} = \frac{20\,\kilogram \cdot 313\,\kelvin + 40\,\kilogram \cdot 288\,\kelvin}{20\,\kilogram + 40\,\kilogram} = 296.3\,\kelvin.\;\star\star
+$$
+Die Endtemperatur beider Blöcke ist $296.3\,\kelvin$ oder $23\,\celsius$\*.
+]{fg="green-shade-3"}
 :::
 
 ```{r}
