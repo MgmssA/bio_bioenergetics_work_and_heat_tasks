@@ -22,7 +22,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Du trägst eine Kiste Sprudel mit einer Masse von $m = 18.4\,\kilogram$ vom Erdgeschoss in das erste Stockwerk, dass sich auf einer Höhe $h = 3.2\,\meter$ befindet. Welche Arbeit verrichtest Du dabei? Von wo nach wo fließt die Energie? Rechne mit $g = 9.8\,\newtonpermeter$.  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die zuständige Gleichung ist die Definition der mechanischen Arbeit:
@@ -66,7 +66,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Du bläst einen Luftballon auf, der sich von $V\sub{Anfang} = 0.000001\,\cubicmeter$ auf $V\sub{Ende} = 0.007\,\cubicmeter$ aufbläht. Welche Arbeit hast Du als System geleistet? Von wo nach wo fließt die Energie? Rechne mit einem Atmosphärendruck von $101325\,\unit{Pa}$.  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die zuständige Gleichung ist die Definition der Expansionsarbeit:
@@ -106,7 +106,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Ein Eichhörnchen mit der Masse $m = 0.5\,\kilogram$ klettert auf einer Fichte von der Erde bis auf eine Höhe von $h = 28\,\meter$ befindet. Welche Arbeit errichtet das Tier dabei? Von wo nach wo fließt die Energie? Rechne mit $g = 9.8\,\newtonpermeter$.  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die zuständige Gleichung ist die Definition der mechanischen Arbeit:
@@ -150,7 +150,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Beim Einatmen dehnen sich bei Frauen die Lungen im Ruhezustand von einem entspannten Anfangsvolumen um etwa $\Delta V = 0.4\,\liter$ beim Einatmen aus. Beii Männer dehnen sie sich um etwa $\Delta V = 0.5\,\liter$ aus. Welche Arbeit wird bei jedem Atemzug verrichtet? Von wo nach wo fließt die Energie? Rechne mit einem Atmosphärendruck von $101325\,\unit{Pa}$.  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die zuständige Gleichung ist die Definition der Expansionsarbeit:
@@ -190,7 +190,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Du erwärmst $m = 1\,\kilogram$ Wasser von $T = 25\,\celsius$ auf $T = 26\,\celsius$. Wieviel Energie benötigst Du dafür? Rechne mit der spezifischen Wärmekapazität des Wassers von $C_{p,m} = 4200\,\jouleperkilogramperkelvin$  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die zuständige Gleichung ist die Definition der Wärmeenergie bezogen auf Stoffmasse:
@@ -230,7 +230,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Du kühlst $m = 18\,\kilogram$ Wasser von $T = 25\,\celsius$ auf $T = 8\,\celsius$ herunter. Wieviel Energie benötigst Du dafür? Rechne mit der spezifischen Wärmekapazität des Wassers von $C_{p,m} = 4200\,\jouleperkilogramperkelvin$.  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die zuständige Gleichung ist die Definition der Wärmeenergie bezogen auf Stoffmasse:

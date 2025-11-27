@@ -30,7 +30,7 @@ W = -F v \Delta t,
 $$
 wobei $v$ die Geschwindigkeit ist und $\Delta t$ eine Zeitspanne.
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Finde zuerst einen Ausdruck, um das $\Delta s$ zu ersetzen\*. Da die Geschwindigkeit eine Rolle spielt, bietet sich 
@@ -66,7 +66,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Eine Menge $m = 25\,\gram$ Wasser wird herunter gekühlt auf $T = 4\,\celsius$. Dabei wurde eine Wärmeenergie von $Q = 3600\,\joule$ aus dem System abgeführt. Welche Anfangstemperatur hatte das Wasser? Rechne mit der spezifischen Wärmekapazität des Wassers von $C_{p,m} = 4200\,\jouleperkilogramperkelvin$.  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die zugrundeliegende Gleichung ist
@@ -119,7 +119,7 @@ b. Wenn es unterschiedliche Materialien und Temperaturveränderungen sind aber d
     \frac{Q_1}{Q_2} = \frac{C_{p,m_1} \Delta T_1}{C_{p,m_2} \Delta T_2}
     $$
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die zugrundeliegende Gleichungen für den ersten Fall sind
@@ -167,7 +167,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Zwei Massen desselben Materials, $m_1 = 20\,\kilogram$ und $m_2 = 40\,\kilogram$ befinden sich jeweils auf $T_1 = 30\,\celsius$ und $T_2 = 15\,\celsius$. Diese Massen werden in Kontakt zueinander gebracht und nach einiger Zeit befinden sich beide auf der Temperatur $T\sub{Ende}$. Welche Endtemperatur wird erreicht? Von wo nach wo fließt die Energie? Zeige die Herleitung Deiner neben der korrekten Berechnung. Tip: es fließt der Betrag einer Energie von einem Block zum anderen.  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Es ist klar, dass beide Massen ihre Temperatur verändern werden\*. Wir wissen bloß noch nicht in welcher Richtung. Es ist dagegen sehr unwahrscheinlich, dass sie auf derselben Temperatur bleiben\*. Wenn das Erstere zutrifft, dann fließt ein Wärmeenergiebetrag von einer Masse auf die andere\*. Auch hier wissen wir nicht von wo nach wo aber wir wissen, dass der Energiegehalt von Masse 1 derselbe sein muss wie der von Masse 2: Also schreiben wir
@@ -228,7 +228,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Ein Kondor mit einem Gewicht $m = 15\,\kilogram$ startet seinen Flug in einer unbekannten Höhe $h_0$. Er fliegt anschliessend auf die Höhe $h_1 = 4600\,\meter$ und ruht dort aus. Danach setzt er seinen Flug fort, um sein Nest auf einer Höhe von $h_2 = 5000\,\meter$ zu erreichen. Bei welcher Höhe ist der Kondor gestartet, wenn sein gesamter Energieverbrauch bei Ankunft $W_{h_0 \rightarrow h_2} = -117.6\,\kilojoule$ war? Rechne mit $g = 9.8\,\newtonpermeter$.  
 
-[Du kannst `{r} task$base_points` Punkte von `{r} task$max_base_points` möglichen Aufgabenpunkten bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Gesucht wird die Höhe $h_0$. Diese ist Teil der Gleichung:

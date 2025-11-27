@@ -21,7 +21,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Womit beschäftigt sich der Teilbereich der Naturwissenschaften mit dem Namen **Thermodynamik**? Gib eine einfache Beschreibung an.  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die Thermodynamik ist ein Teilbereich der Naturwissenschaften, der sich mit Wärme\*, Arbeit\*, Temperatur\* und ihren Beziehungen zur Energie\* beschäftigt.]{fg="green-shade-3"}
@@ -48,7 +48,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Welche Zustände und Zustandsänderungen behandelt die Thermodynamik? Gib jeweils zwei Beispiele für Zustandsänderungen von Materie und Energie an. 
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [In der Thermodynamik vergleichen wir Anfangs-\* und Endzustände\* von Materie\* und Energie\* miteinander. Beispiele für Zustandsänderungen von Materie können Druck\*, das Volumen\*, oder Temperatur\* sein. Zustandsänderungen von Energie können mechanische Arbeit\* oder Wärme\* sein.]{fg="green-shade-3"}
@@ -75,7 +75,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Die Differenz wird auch als Differenzoperator bezeichnet. Das ist so, weil das voranstellen das Bilden einer Differenz veranlasst. Übe das Bilden einer Differenz mithilfe des Differenzoperators an der Variablen $x$, $p$, $T$, $V$, und $W$. 
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Der Differenzoperator veranlasst die Bildung einer Differenz, wenn er an einer beliebigen Variable $x$ vorangestellt wird\*. Dann wird daraus
@@ -121,7 +121,7 @@ a. $x\sub{Anfang} = 5, \, x\sub{Ende} = 12$
 
 #. $x\sub{Anfang} = -9, \, x\sub{Ende} = -2$
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die Ergebnisse sind
@@ -162,7 +162,7 @@ a. $x\sub{Anfang} = -6, \, x\sub{Ende} = -12$
 
 #. $x\sub{Anfang} = 15, \, x\sub{Ende} = 9$
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die Ergebnisse sind
@@ -197,7 +197,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Was sind die wichtigsten Eigenschaften von Differenzen? 
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die wichtigsten Eigenschaften von Differenzen sind: 1. Das Delta zeigt den Betrag oder die Länge zwischen Anfang und Ende an. 2. Das Vorzeichen des Deltas zeigt immer die Richtung an, in der sich etwas bewegt oder die Differenz gebildet wird.
@@ -225,7 +225,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Gib die Definition der mechanischen Arbeit an. Gib die Gleichung an, beschreibe in einem Satz, was sie bedeutet, nenne alle Variablen und gib ihre physikalische Einheit an. Warum hat die Arbeit in der Thermodynamik einen negative Vorzeichen?  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die mechanische Arbeit ist definiert als
@@ -256,7 +256,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Gib die Definition der Expansionsarbeit an. Gib die Gleichung an, beschreibe in einem Satz, was sie bedeutet, nenne alle Variablen und gib ihre physikalische Einheit an. Warum hat die Expansionsarbeit in der Thermodynamik einen negative Vorzeichen?  
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die Expansionsarbeit ist definiert als
@@ -287,7 +287,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Gib die Definition für die Wärmeenergie an. Gib die Gleichung für die gesamte Wärmeenergie an, beschreibe in einem Satz, was sie bedeutet, nenne alle Variablen mit entsprechenden physikalische Einheit. Warum gibt es hier kein Mimnuszeichen wie bei der mechanischen Kraft?
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [a: Die Veränderung der Wärmeenergie ist definiert als
@@ -318,7 +318,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Wie lässt sich die gesamte Wärmekapazität eines Systems für einen homogenen Stoff auf Massen und auf Stoffmenge beziehen?
 
-[Du kannst `{r} task$base_points` und maximal `{r} task$max_base_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die auf Masse bezogene Wärmekapazität ist als
