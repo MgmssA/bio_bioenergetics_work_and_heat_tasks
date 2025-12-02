@@ -104,7 +104,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Ein Eichhörnchen mit der Masse $m = 0.5\,\kilogram$ klettert auf einer Fichte von der Erde bis auf eine Höhe von $h = 28\,\meter$ befindet. Welche Arbeit errichtet das Tier dabei? Von wo nach wo fließt die Energie? Rechne mit $g = 9.8\,\newtonpermeter$.  
+Ein Eichhörnchen mit der Masse $m = 0.5\,\kilogram$ klettert auf einer Fichte von der Erde bis auf eine Höhe von $h = 28\,\meter$ befindet. Welche Arbeit errichtet das Tier dabei? Von wo nach wo fließt die Energie? Rechne mit $g = 9.8\,\newtonperkilogram$ (Danke Finn).  
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
