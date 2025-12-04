@@ -226,7 +226,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Ein Kondor mit einem Gewicht $m = 15\,\kilogram$ startet seinen Flug in einer unbekannten Höhe $h_0$. Er fliegt anschliessend auf die Höhe $h_1 = 4600\,\meter$ und ruht dort aus. Danach setzt er seinen Flug fort, um sein Nest auf einer Höhe von $h_2 = 5000\,\meter$ zu erreichen. Bei welcher Höhe ist der Kondor gestartet, wenn sein gesamter Energieverbrauch bei Ankunft $W_{h_0 \rightarrow h_2} = -117.6\,\kilojoule$ war? Rechne mit $g = 9.8\,\newtonpermeter$.  
+Ein Kondor mit einem Gewicht $m = 15\,\kilogram$ startet seinen Flug in einer unbekannten Höhe $h_0$. Er fliegt anschliessend auf die Höhe $h_1 = 4600\,\meter$ und ruht dort aus. Danach setzt er seinen Flug fort, um sein Nest auf einer Höhe von $h_2 = 5000\,\meter$ zu erreichen. Bei welcher Höhe ist der Kondor gestartet, wenn sein gesamter Energieverbrauch bei Ankunft $W_{h_0 \rightarrow h_2} = -117.6\,\kilojoule$ war? Rechne mit $g = 9.8\,\newtonperkilogram$.  
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 

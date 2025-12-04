@@ -20,7 +20,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Du trägst eine Kiste Sprudel mit einer Masse von $m = 18.4\,\kilogram$ vom Erdgeschoss in das erste Stockwerk, dass sich auf einer Höhe $h = 3.2\,\meter$ befindet. Welche Arbeit verrichtest Du dabei? Von wo nach wo fließt die Energie? Rechne mit $g = 9.8\,\newtonpermeter$.  
+Du trägst eine Kiste Sprudel mit einer Masse von $m = 18.4\,\kilogram$ vom Erdgeschoss in das erste Stockwerk, dass sich auf einer Höhe $h = 3.2\,\meter$ befindet. Welche Arbeit verrichtest Du dabei? Von wo nach wo fließt die Energie? Rechne mit $g = 9.8\,\newtonperkilogram$ (Danke Daniel & Michel).  
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für das korrekte Vorgehen bei der Lösung mathematischer Aufgaben vergeben. Weiterhin werden Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]{fg="purple"}
 
@@ -31,7 +31,7 @@ W = -F \Delta s.\;\star
 $$
 Die wirkende Kraft ist die Gewichtskraft
 $$
-F = m g = 18.4\,\kilogram \cdot 9.8\,\newtonpermeter \approx 180\,\newton.\;\star\star
+F = m g = 18.4\,\kilogram \cdot 9.8\,\newtonperkilogram \approx 180\,\newton.\;\star\star
 $$
 Die Wirkstrecke der Kraft ist
 $$
@@ -115,7 +115,7 @@ W = -F \Delta s.\;\star
 $$
 Die wirkende Kraft ist die Gewichtskraft
 $$
-F = m g = 0.5\,\kilogram \cdot 9.8\,\newtonpermeter = 4.9\,\newton.\;\star\star
+F = m g = 0.5\,\kilogram \cdot 9.8\,\newtonperkilogram = 4.9\,\newton.\;\star\star
 $$
 Die Wirkstrecke der Kraft ist
 $$
